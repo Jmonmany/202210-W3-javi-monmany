@@ -27,9 +27,9 @@
            background-color: #5F2EEA;
        }
     }
-} 
-$font-stack: 'Poppins', sans-serif;
+}
 
+$font-stack: 'Poppins', sans-serif;
 $color-black: #000;
 $color-black-light: #14142b;
 $color-gray: #14142b;
@@ -47,7 +47,7 @@ $color-red-error: #c30052;
     padding: 20px;
     text-align: center;
     font-family: $font-stack;
-     &__item{
+    &__item{
         margin-bottom: 1rem;
        
     }
@@ -69,7 +69,7 @@ $color-red-error: #c30052;
         line-height: 25px;
         color: $color-gray;
     }
-    &__text--purple{
+    &__text--purple {
         color: $color-purple;
     }
 }
