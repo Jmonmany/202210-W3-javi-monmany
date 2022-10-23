@@ -105,8 +105,7 @@ body {
 .house-item__image {
   background-color: green;
   width: 272px;
-  height: 204px;
-  width: auto;
+  height: auto;
   border-radius: 20px;
   margin: 1rem;
 }
@@ -143,7 +142,6 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   color: #4e4b66;
-  margin: 0.5rem 0;
 }
 .house-item__button {
   font-family: "Poppins", sans-serif;
