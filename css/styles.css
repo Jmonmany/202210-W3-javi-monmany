@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -28,6 +27,7 @@
   height: 0.3rem;
   border-radius: 1rem;
   background-color: #5F2EEA;
+}
 
 .footer {
   color: #000;
@@ -56,7 +56,6 @@
 }
 .footer__text--purple {
   color: #bca4ff;
-
 }
 
 /*# sourceMappingURL=styles.css.map */
