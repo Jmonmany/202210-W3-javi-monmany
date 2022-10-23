@@ -2,6 +2,31 @@
     box-sizing: border-box;
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.387);
+    color: #5F2EEA;
+    width: 100vw;
+    &__title {
+        font-size: 2rem;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+           margin: 0.1rem;
+           width: 2rem;
+           height: 0.3rem;
+           border-radius: 1rem;
+           background-color: #5F2EEA;
+       }
+    }
 $font-stack: 'Poppins', sans-serif;
 
 $color-black: #000;
@@ -46,6 +71,4 @@ $color-red-error: #c30052;
     &__text--purple{
         color: $color-purple;
     }
-
-
 }
