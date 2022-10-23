@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -27,6 +28,35 @@
   height: 0.3rem;
   border-radius: 1rem;
   background-color: #5F2EEA;
+
+.footer {
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.footer__item {
+  margin-bottom: 1rem;
+}
+.footer__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34.375px;
+  line-height: 55px;
+  color: #5f2eea;
+}
+.footer__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #14142b;
+}
+.footer__text--purple {
+  color: #bca4ff;
+
 }
 
 /*# sourceMappingURL=styles.css.map */
