@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -39,6 +36,8 @@ body {
   margin-top: 2rem;
   padding: 0 1rem;
   min-width: 350px;
+  border-bottom: solid 1px #d9dbe9;
+  padding-block-end: 2rem;
 }
 .search-top__container {
   display: flex;
@@ -52,7 +51,6 @@ body {
   letter-spacing: 1px;
 }
 .search-top__input {
-  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   height: 1.8rem;
   border: 2px solid #14142b;
@@ -65,7 +63,7 @@ body {
   background-size: 0.7rem;
   background-position: 95% 50%;
   padding-right: 15px;
-  background-color: #F7F7FC;
+  background-color: #f7f7fc;
 }
 .search-top__button {
   width: 100%;
@@ -80,6 +78,83 @@ body {
   letter-spacing: 1px;
   padding: 0.5rem 1rem;
   cursor: pointer;
+}
+
+.search {
+  border-radius: 1rem;
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #bca4ff;
+  margin-inline-end: 2rem;
+  margin-inline-start: 2rem;
+  background-color: #2a00a2;
+  padding-inline-end: 2rem;
+  padding-inline-start: 2rem;
+  padding-bottom: 2rem;
+}
+.search__subtitle {
+  color: #f3efff;
+  margin: 0;
+}
+.search__magnifier {
+  background: url(/Img/Search.png);
+  background-repeat: no-repeat;
+  background-size: 0.7rem;
+  background-position: 5% 50%;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7fc;
+  height: 4rem;
+}
+.search__checkin {
+  background: url(/Img/Calandar.png);
+  background-repeat: no-repeat;
+  background-size: 0.7rem;
+  background-position: 5% 50%;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7fc;
+  height: 4rem;
+}
+.search__checkout {
+  background: url(/Img/Calandar.png);
+  background-repeat: no-repeat;
+  background-size: 0.7rem;
+  background-position: 5% 50%;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7fc;
+  height: 4rem;
+}
+.search__travellers {
+  background: url(/Img/Profile.png);
+  background-repeat: no-repeat;
+  background-size: 0.7rem;
+  background-position: 5% 50%;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  border-radius: 15px;
+  padding: 1rem 3rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f7f7fc;
+  height: 4rem;
+}
+.search button {
+  height: 4rem;
 }
 
 .properties {

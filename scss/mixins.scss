@@ -1,0 +1,15 @@
+@use 'variables';
+@mixin theme($icon: url(/Img/Calandar.png)) {
+    background: $icon;
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+    background-position: 5% 50%;
+    font-size: 0.8rem;
+    height: 1.8rem;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    padding-inline-end: 1rem;
+    margin-bottom: 1rem;
+    background-color: variables.$color-graybackground-input;
+    height: 4rem;
+}
