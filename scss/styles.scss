@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: variables.$font-stack;
+}
 
 .nav {
     display: flex;
@@ -21,12 +24,67 @@
         flex-direction: column;
         align-items: center;
         a {
-           margin: 0.1rem;
-           width: 2rem;
-           height: 0.3rem;
-           border-radius: 1rem;
-           background-color: variables.$color-blue ;
-       }
+            margin: 0.1rem;
+            width: 2rem;
+            height: 0.3rem;
+            border-radius: 1rem;
+            background-color: variables.$color-blue;
+        }
+    }
+}
+
+.search-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    min-width: 350px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+
+    &__input {
+        font-family: variables.$font-stack;
+        font-size: 0.8rem;
+        height: 1.8rem;
+      
+        border: 2px solid #14142b;
+        border-radius: 15px;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    &__input--arrow {
+        background: url(../Img/Forward-right-arrow.png) no-repeat right; ;
+        background-size: 0.7rem;
+        background-position: 95% 50%;
+        padding-right: 15px;
+        background-color: variables.$color-graybackground-input;
+    }
+
+    &__button {
+        width: 100%;
+        
+        font-family: variables.$font-stack;
+        background: variables.$color-pink;
+        border-radius: 3rem;
+        border: none;
+        color: variables.$color-white;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        padding: 0.5rem 1rem;
+
+        cursor: pointer;
     }
 }
 
@@ -56,22 +114,21 @@
     padding: 20px;
     text-align: center;
     font-family: variables.$font-stack;
-    &__item{
+    &__item {
         margin-bottom: 1rem;
-       
     }
 
     &__title {
-        font-family: 'Poppins';
+        font-family: variables.$font-stack;
         font-style: normal;
         font-weight: 700;
         font-size: 34.375px;
         line-height: 55px;
         color: variables.$color-blue;
     }
-   
+
     &__text {
-        font-family: 'Poppins';
+        font-family: variables.$font-stack;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
