@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "sass": "sass scss:css -w"
     },
-    "author": "Javier Monmany",
+    "authors": "Javier Monmany & Miguel Gómez",
     "license": "ISC",
     "prettier": {
         "singleQuote": true
