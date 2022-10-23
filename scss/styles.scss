@@ -1,9 +1,11 @@
 @use 'variables';
+@use 'mixins';
+
 * {
     box-sizing: border-box;
+    font-family: variables.$font-stack;
 }
 body {
-    font-family: variables.$font-stack;
 }
 
 .nav {
@@ -39,7 +41,8 @@ body {
     margin-top: 2rem;
     padding: 0 1rem;
     min-width: 350px;
-
+    border-bottom: solid 1px variables.$color-grayscale;
+    padding-block-end: 2rem;
     &__container {
         display: flex;
         flex-direction: column;
@@ -53,17 +56,15 @@ body {
     }
 
     &__input {
-        font-family: variables.$font-stack;
         font-size: 0.8rem;
         height: 1.8rem;
-      
         border: 2px solid #14142b;
         border-radius: 15px;
         padding: 1.5rem 1rem;
         margin-bottom: 1rem;
     }
     &__input--arrow {
-        background: url(../Img/Forward-right-arrow.png) no-repeat right; ;
+        background: url(../Img/Forward-right-arrow.png) no-repeat right;
         background-size: 0.7rem;
         background-position: 95% 50%;
         padding-right: 15px;
@@ -72,7 +73,7 @@ body {
 
     &__button {
         width: 100%;
-        
+
         font-family: variables.$font-stack;
         background: variables.$color-pink;
         border-radius: 3rem;
@@ -83,29 +84,42 @@ body {
         line-height: 1.5rem;
         letter-spacing: 1px;
         padding: 0.5rem 1rem;
-
         cursor: pointer;
     }
 }
 
 .search {
+    border-radius: 1rem;
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: variables.$color-purple;
+    margin-inline-end: 2rem;
+    margin-inline-start: 2rem;
+    background-color: variables.$color-blue-section;
+    padding-inline-end: 2rem;
+    padding-inline-start: 2rem;
+    padding-bottom: 2rem;
     &__title {
-
     }
     &__subtitle {
-
+        color: variables.$color-section-letter;
+        margin: 0;
     }
     &__magnifier {
-
+        @include mixins.theme($icon: url(/Img/Search.png));
     }
     &__checkin {
-
+        @include mixins.theme;
     }
     &__checkout {
-
+        @include mixins.theme;
     }
     &__travellers {
-
+        @include mixins.theme($icon: url(/Img/Profile.png));
+    }
+    button {
+        height: 4rem;
     }
 }
 
