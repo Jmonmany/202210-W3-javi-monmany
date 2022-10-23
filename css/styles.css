@@ -9,8 +9,8 @@
   padding-inline-end: 3rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.387);
-  color: #5F2EEA;
+  border-bottom: 1px solid rgba(188, 164, 255, 0.4);
+  color: #5f2eea;
   width: 100vw;
 }
 .nav__title {
@@ -26,7 +26,7 @@
   width: 2rem;
   height: 0.3rem;
   border-radius: 1rem;
-  background-color: #5F2EEA;
+  background-color: #5f2eea;
 }
 
 .footer {
@@ -56,6 +56,13 @@
 }
 .footer__text--purple {
   color: #bca4ff;
+}
+
+#lupa {
+  padding-right: 2rem;
+  background-image: url(/Img/Search.png);
+  background-size: 1rem;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=styles.css.map */

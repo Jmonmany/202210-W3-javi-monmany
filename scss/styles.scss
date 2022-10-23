@@ -1,3 +1,4 @@
+@use 'variables';
 * {
     box-sizing: border-box;
 }
@@ -9,8 +10,8 @@
     padding-inline-end: 3rem;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.387);
-    color: #5F2EEA;
+    border-bottom: 1px solid rgba(188, 164, 255, 0.4);
+    color: variables.$color-blue;
     width: 100vw;
     &__title {
         font-size: 2rem;
@@ -24,29 +25,16 @@
            width: 2rem;
            height: 0.3rem;
            border-radius: 1rem;
-           background-color: #5F2EEA;
+           background-color: variables.$color-blue ;
        }
     }
 }
 
-$font-stack: 'Poppins', sans-serif;
-$color-black: #000;
-$color-black-light: #14142b;
-$color-gray: #14142b;
-$color-gray-light: #4e4b66;
-$color-white: #fff;
-$color-blue: #5f2eea;
-$color-blue-dark: #3a1e9a;
-$color-pink: #ed2e7e;
-$color-purple: #bca4ff;
-$color-green: #00ba88;
-$color-red-error: #c30052;
-
 .footer {
-    color: $color-black;
+    color: variables.$color-black;
     padding: 20px;
     text-align: center;
-    font-family: $font-stack;
+    font-family: variables.$font-stack;
     &__item{
         margin-bottom: 1rem;
        
@@ -58,7 +46,7 @@ $color-red-error: #c30052;
         font-weight: 700;
         font-size: 34.375px;
         line-height: 55px;
-        color: $color-blue;
+        color: variables.$color-blue;
     }
    
     &__text {
@@ -67,9 +55,16 @@ $color-red-error: #c30052;
         font-weight: 500;
         font-size: 16px;
         line-height: 25px;
-        color: $color-gray;
+        color: variables.$color-gray;
     }
     &__text--purple {
-        color: $color-purple;
+        color: variables.$color-purple;
     }
+}
+
+#lupa {
+    padding-right: 2rem;
+    background-image: url(/Img/Search.png);
+    background-size: 1rem;
+    background-repeat: no-repeat;
 }
