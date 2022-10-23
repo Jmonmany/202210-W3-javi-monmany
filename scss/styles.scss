@@ -73,7 +73,7 @@ body {
 
     &__button {
         width: 100%;
-
+        
         font-family: variables.$font-stack;
         background: variables.$color-pink;
         border-radius: 3rem;
@@ -121,6 +121,102 @@ body {
     button {
         height: 4rem;
     }
+}
+
+
+
+.properties{
+     padding: 0 1rem;
+    
+    min-width: 500px;
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+}
+
+
+.house-item{
+    h4,h5{
+        margin:0;
+    }
+    p{
+        margin:0;
+    }
+
+    &__image-container{
+        
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__image{
+        background-color: green;
+        width: 272px;
+        height: auto;
+        border-radius: 20px;
+        margin: 1rem;
+    }
+    &__text-container{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    &__star-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.4rem 0;
+    }
+        
+    &__star{
+       margin-right: 0.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        
+    }
+
+    &__title{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: variables.$color-blue;
+        margin: 0.5rem 0;
+    }
+    &__title--small{
+        font-size: 1rem;
+       
+        
+    }
+    &__title--img::before{
+        content: url(../Img/Location.png);
+        margin-right: 0.5rem;
+
+    }
+
+    &__text{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: variables.$color-gray-light;
+        
+    }
+    &__button{
+        font-family: variables.$font-stack;
+        background-color: variables.$color-white;
+        color:variables.$color-blue;
+        font-size:0.7rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+        border: none;
+        border-radius: 3rem;
+        border:solid 1px variables.$color-blue;
+        padding: 0.3rem 1rem;
+    }
+   
+
+    
+
 }
 
 .footer {
