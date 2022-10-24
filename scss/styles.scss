@@ -2,6 +2,8 @@
 @use 'mixins';
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: variables.$font-stack;
 }
@@ -9,6 +11,8 @@ body {
 }
 
 .nav {
+    height: 7rem;
+    margin: 0;
     display: flex;
     flex-direction: row;
     padding-inline-start: 3rem;
@@ -22,12 +26,13 @@ body {
         font-size: 2rem;
     }
     &__menu {
+        margin-inline-end: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         a {
             margin: 0.1rem;
-            width: 2rem;
+            width: 1.9rem;
             height: 0.3rem;
             border-radius: 1rem;
             background-color: variables.$color-blue;
@@ -38,12 +43,12 @@ body {
 .search-top {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-    padding: 0 1rem;
-    min-width: 350px;
+    margin-block-start: 5rem;
+    padding-inline: 2rem;
     border-bottom: solid 1px variables.$color-grayscale;
     padding-block-end: 2rem;
     &__container {
+        margin-block: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -56,12 +61,12 @@ body {
     }
 
     &__input {
-        font-size: 0.8rem;
+        font-size: 1rem;
         height: 1.8rem;
         border: 2px solid #14142b;
         border-radius: 15px;
         padding: 1.5rem 1rem;
-        margin-bottom: 1rem;
+        margin-block: 0.7rem;
     }
     &__input--arrow {
         background: url(../Img/Forward-right-arrow.png) no-repeat right;
@@ -72,15 +77,16 @@ body {
     }
 
     &__button {
+        margin-block: 0.5rem;
         width: 100%;
-        
+        height: 3.5rem;
         font-family: variables.$font-stack;
         background: variables.$color-pink;
         border-radius: 3rem;
         border: none;
         color: variables.$color-white;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 1px;
         padding: 0.5rem 1rem;
@@ -101,10 +107,11 @@ body {
     padding-inline-start: 2rem;
     padding-bottom: 2rem;
     &__title {
+        font-weight: 600;
+        margin-block: 2rem;
     }
     &__subtitle {
         color: variables.$color-section-letter;
-        margin: 0;
     }
     &__magnifier {
         @include mixins.theme($icon: url(/Img/Search.png));
@@ -118,105 +125,88 @@ body {
     &__travellers {
         @include mixins.theme($icon: url(/Img/Profile.png));
     }
-    button {
-        height: 4rem;
-    }
 }
 
-
-
-.properties{
-     padding: 0 1rem;
-    
+.properties {
+    padding: 0 1rem;
     min-width: 500px;
-    &__title{
+    &__title {
         font-size: 1.5rem;
         font-weight: 700;
         margin: 1rem 0;
     }
 }
 
-
-.house-item{
-    h4,h5{
-        margin:0;
+.house-item {
+    h4,
+    h5 {
+        margin: 0;
     }
-    p{
-        margin:0;
+    p {
+        margin: 0;
     }
 
-    &__image-container{
-        
+    &__image-container {
         display: flex;
         overflow: hidden;
     }
 
-    &__image{
+    &__image {
         background-color: green;
         width: 272px;
         height: auto;
         border-radius: 20px;
         margin: 1rem;
     }
-    &__text-container{
-        
+    &__text-container {
         display: flex;
         flex-direction: column;
     }
-    &__star-container{
+    &__star-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin: 0.4rem 0;
     }
-        
-    &__star{
-       margin-right: 0.2rem;
+
+    &__star {
+        margin-right: 0.2rem;
         width: 1.2rem;
         height: 1.2rem;
         border-radius: 50%;
-        
     }
 
-    &__title{
+    &__title {
         font-size: 1.2rem;
         font-weight: 600;
         color: variables.$color-blue;
         margin: 0.5rem 0;
     }
-    &__title--small{
+    &__title--small {
         font-size: 1rem;
-       
-        
     }
-    &__title--img::before{
+    &__title--img::before {
         content: url(../Img/Location.png);
         margin-right: 0.5rem;
-
     }
 
-    &__text{
+    &__text {
         font-size: 0.8rem;
         font-weight: 400;
         color: variables.$color-gray-light;
-        
     }
-    &__button{
+    &__button {
         font-family: variables.$font-stack;
         background-color: variables.$color-white;
-        color:variables.$color-blue;
-        font-size:0.7rem;
+        color: variables.$color-blue;
+        font-size: 0.7rem;
         font-weight: 600;
         margin: 0.5rem 0;
         border: none;
         border-radius: 3rem;
-        border:solid 1px variables.$color-blue;
+        border: solid 1px variables.$color-blue;
         padding: 0.3rem 1rem;
     }
-   
-
-    
-
 }
 
 .footer {
