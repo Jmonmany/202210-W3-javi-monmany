@@ -176,16 +176,15 @@
   border: 0;
 }
 
-.properties {
-  padding: 0 1rem;
-  min-width: 500px;
+.house-item {
+  padding-block-end: 5rem;
+  margin-inline-start: 2rem;
+  margin-block-start: 3rem;
+  border-bottom: solid 1px #d9dbe9;
 }
-.properties__title {
-  font-size: 1.5rem;
+.house-item__properties {
   font-weight: 700;
-  margin: 1rem 0;
 }
-
 .house-item h4,
 .house-item h5 {
   margin: 0;
@@ -200,9 +199,10 @@
 .house-item__image {
   background-color: green;
   width: 272px;
-  height: auto;
+  height: 204px;
   border-radius: 20px;
-  margin: 1rem;
+  margin-inline-end: 1rem;
+  margin-block: 2rem;
 }
 .house-item__text-container {
   display: flex;
@@ -249,6 +249,92 @@
   border-radius: 3rem;
   border: solid 1px #5f2eea;
   padding: 0.3rem 1rem;
+}
+
+.arrow-button {
+  width: 25%;
+  bottom: 3vh;
+  left: 40%;
+  background-color: white;
+  position: relative;
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+}
+
+.thumb-warning {
+  margin-inline: 2rem;
+  margin-block: 1rem;
+}
+.thumb-warning__thumb {
+  background-color: rgba(0, 186, 136, 0.0941176471);
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 2rem;
+  border: solid 2px;
+  border-radius: 15px;
+  border-color: #00966d;
+}
+.thumb-warning__thumb p {
+  color: #00966d;
+  padding-inline-end: 2rem;
+  padding-inline-start: 3.5rem;
+  background-image: url(/Img/Pulgar.png);
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 5% 10%;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.thumb-warning__warning {
+  background-color: rgba(237, 46, 126, 0.1294117647);
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 2rem;
+  border: solid 2px;
+  border-radius: 15px;
+  border-color: #ed2e7e;
+}
+.thumb-warning__warning p {
+  color: #ed2e7e;
+  padding-inline-start: 3.5rem;
+  background-image: url(/Img/Alert-info.png);
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 5% 10%;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.info {
+  background-image: url(/Img/Contact\ Box.png);
+  background-repeat: no-repeat;
+  height: 29rem;
+  background-size: 26rem 29rem;
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info__question {
+  height: 13rem;
+  margin-inline: 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.info__button {
+  background-color: transparent;
+  color: #fff;
+  height: 4rem;
+  width: 22rem;
+  border-radius: 40px;
+  border: solid 2px #fff;
 }
 
 .footer {
