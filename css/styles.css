@@ -1,9 +1,13 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 .nav {
+  height: 7rem;
+  margin: 0;
   display: flex;
   flex-direction: row;
   padding-inline-start: 3rem;
@@ -18,13 +22,14 @@
   font-size: 2rem;
 }
 .nav__menu {
+  margin-inline-end: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .nav__menu a {
   margin: 0.1rem;
-  width: 2rem;
+  width: 1.9rem;
   height: 0.3rem;
   border-radius: 1rem;
   background-color: #5f2eea;
@@ -33,13 +38,13 @@
 .search-top {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  padding: 0 1rem;
-  min-width: 350px;
+  margin-block-start: 5rem;
+  padding-inline: 2rem;
   border-bottom: solid 1px #d9dbe9;
   padding-block-end: 2rem;
 }
 .search-top__container {
+  margin-block: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -51,12 +56,12 @@
   letter-spacing: 1px;
 }
 .search-top__input {
-  font-size: 0.8rem;
+  font-size: 1rem;
   height: 1.8rem;
   border: 2px solid #14142b;
   border-radius: 15px;
   padding: 1.5rem 1rem;
-  margin-bottom: 1rem;
+  margin-block: 0.7rem;
 }
 .search-top__input--arrow {
   background: url(../Img/Forward-right-arrow.png) no-repeat right;
@@ -66,14 +71,16 @@
   background-color: #f7f7fc;
 }
 .search-top__button {
+  margin-block: 0.5rem;
   width: 100%;
+  height: 3.5rem;
   font-family: "Poppins", sans-serif;
   background: #ed2e7e;
   border-radius: 3rem;
   border: none;
   color: #fff;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 1px;
   padding: 0.5rem 1rem;
@@ -93,68 +100,80 @@
   padding-inline-start: 2rem;
   padding-bottom: 2rem;
 }
+.search__title {
+  font-weight: 600;
+  margin-block: 2rem;
+}
 .search__subtitle {
   color: #f3efff;
-  margin: 0;
 }
 .search__magnifier {
   background: url(/Img/Search.png);
   background-repeat: no-repeat;
-  background-size: 0.7rem;
+  background-size: 1.5rem;
   background-position: 5% 50%;
-  font-size: 0.8rem;
-  height: 1.8rem;
+  font-size: 1rem;
   border-radius: 15px;
-  padding: 1rem 3rem;
-  padding-inline-end: 1rem;
   margin-bottom: 1rem;
   background-color: #f7f7fc;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 3.5rem;
+  justify-content: space-between;
+  border: 0;
 }
 .search__checkin {
   background: url(/Img/Calandar.png);
   background-repeat: no-repeat;
-  background-size: 0.7rem;
+  background-size: 1.5rem;
   background-position: 5% 50%;
-  font-size: 0.8rem;
-  height: 1.8rem;
+  font-size: 1rem;
   border-radius: 15px;
-  padding: 1rem 3rem;
-  padding-inline-end: 1rem;
   margin-bottom: 1rem;
   background-color: #f7f7fc;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 3.5rem;
+  justify-content: space-between;
+  border: 0;
 }
 .search__checkout {
   background: url(/Img/Calandar.png);
   background-repeat: no-repeat;
-  background-size: 0.7rem;
+  background-size: 1.5rem;
   background-position: 5% 50%;
-  font-size: 0.8rem;
-  height: 1.8rem;
+  font-size: 1rem;
   border-radius: 15px;
-  padding: 1rem 3rem;
-  padding-inline-end: 1rem;
   margin-bottom: 1rem;
   background-color: #f7f7fc;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 3.5rem;
+  justify-content: space-between;
+  border: 0;
 }
 .search__travellers {
   background: url(/Img/Profile.png);
   background-repeat: no-repeat;
-  background-size: 0.7rem;
+  background-size: 1.5rem;
   background-position: 5% 50%;
-  font-size: 0.8rem;
-  height: 1.8rem;
+  font-size: 1rem;
   border-radius: 15px;
-  padding: 1rem 3rem;
-  padding-inline-end: 1rem;
   margin-bottom: 1rem;
   background-color: #f7f7fc;
   height: 4rem;
-}
-.search button {
-  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline-end: 2rem;
+  padding-inline-start: 3.5rem;
+  justify-content: space-between;
+  border: 0;
 }
 
 .properties {
@@ -167,7 +186,8 @@
   margin: 1rem 0;
 }
 
-.house-item h4, .house-item h5 {
+.house-item h4,
+.house-item h5 {
   margin: 0;
 }
 .house-item p {

@@ -2,14 +2,17 @@
 @mixin theme($icon: url(/Img/Calandar.png)) {
     background: $icon;
     background-repeat: no-repeat;
-    background-size: 0.7rem;
+    background-size: 1.5rem;
     background-position: 5% 50%;
-    font-size: 0.8rem;
-    height: 1.8rem;
+    font-size: 1rem;
     border-radius: 15px;
-    padding: 1rem 3rem;
-    padding-inline-end: 1rem;
     margin-bottom: 1rem;
     background-color: variables.$color-graybackground-input;
     height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-inline-end: 2rem;
+    padding-inline-start: 3.5rem;
+    justify-content: space-between;
+    border: 0;
 }
