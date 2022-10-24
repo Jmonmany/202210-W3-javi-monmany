@@ -127,17 +127,14 @@ body {
     }
 }
 
-.properties {
-    padding: 0 1rem;
-    min-width: 500px;
-    &__title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 1rem 0;
-    }
-}
-
 .house-item {
+    padding-block-end: 5rem;
+    margin-inline-start: 2rem;
+    margin-block-start: 3rem;
+    border-bottom: solid 1px variables.$color-grayscale;
+    &__properties {
+        font-weight: 700;
+    }
     h4,
     h5 {
         margin: 0;
@@ -154,9 +151,10 @@ body {
     &__image {
         background-color: green;
         width: 272px;
-        height: auto;
+        height: 204px;
         border-radius: 20px;
-        margin: 1rem;
+        margin-inline-end: 1rem;
+        margin-block: 2rem;
     }
     &__text-container {
         display: flex;
@@ -206,6 +204,92 @@ body {
         border-radius: 3rem;
         border: solid 1px variables.$color-blue;
         padding: 0.3rem 1rem;
+    }
+}
+
+.arrow-button {
+    width: 25%;
+    bottom: 3vh;
+    left: 40%;
+    background-color: white;
+    position: relative;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+}
+
+.thumb-warning {
+    margin-inline: 2rem;
+    margin-block: 1rem;
+    &__thumb {
+        background-color: variables.$color-green;
+        height: 8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-block: 2rem;
+        border: solid 2px;
+        border-radius: 15px;
+        border-color: variables.$color-green-letter;
+        p {
+            color: variables.$color-green-letter;
+            padding-inline-end: 2rem;
+            padding-inline-start: 3.5rem;
+            background-image: url(/Img/Pulgar.png);
+            background-repeat: no-repeat;
+            background-size: 1.5rem;
+            background-position: 5% 10%;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    }
+    &__warning {
+        background-color: variables.$color-pink-vanish;
+        height: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-block: 2rem;
+        border: solid 2px;
+        border-radius: 15px;
+        border-color: variables.$color-pink-letter;
+        p {
+            color: variables.$color-pink-letter;
+            padding-inline-start: 3.5rem;
+            background-image: url(/Img/Alert-info.png);
+            background-repeat: no-repeat;
+            background-size: 1.5rem;
+            background-position: 5% 10%;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.info {
+    background-image: url(/Img/Contact\ Box.png);
+    background-repeat: no-repeat;
+    height: 29rem;
+    background-size: 26rem 29rem;
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__question {
+        height: 13rem;
+        margin-inline: 2rem;
+        color: variables.$color-white;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    &__button {
+        background-color: transparent;
+        color: variables.$color-white;
+        height: 4rem;
+        width: 22rem;
+        border-radius: 40px;
+        border: solid 2px variables.$color-white;
     }
 }
 
