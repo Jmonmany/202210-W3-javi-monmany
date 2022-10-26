@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: variables.$color-blue;
-    width: 100%;
+    width: 100vw;
     &__title {
         font-size: 2rem;
     }
@@ -378,10 +378,7 @@ header {
 
 @media (min-width: 1000px) {
 
-    .nav {
-        max-width: 100vh;
-    }
-    
+
     .search-top {
        
         &__container {
