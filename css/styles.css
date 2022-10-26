@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
 header {
   border-bottom: 1px solid rgba(188, 164, 255, 0.4);
 }
@@ -19,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #5f2eea;
-  width: 100vw;
+  width: auto;
 }
 .nav__title {
   font-size: 2rem;
