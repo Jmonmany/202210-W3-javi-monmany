@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+header {
+  border-bottom: 1px solid rgba(188, 164, 255, 0.4);
+}
+
 .nav {
   height: 7rem;
   margin: 0;
@@ -14,9 +18,8 @@
   padding-inline-end: 3rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(188, 164, 255, 0.4);
   color: #5f2eea;
-  width: 100vw;
+  width: 100%;
 }
 .nav__title {
   font-size: 2rem;
@@ -418,6 +421,19 @@
 }
 
 @media (min-width: 1000px) {
+  .nav {
+    max-width: 100vh;
+  }
+  .search-top__container {
+    flex-direction: row;
+  }
+  .search-top__input {
+    margin-inline: 0.5rem;
+  }
+  .search-top__button {
+    max-width: 200px;
+    margin-inline: 1rem;
+  }
   .main-section {
     display: flex;
     flex-direction: row;
@@ -432,6 +448,9 @@
   .main-section .house-item {
     display: flex;
     flex-direction: row;
+  }
+  .main-section .properties__container {
+    max-width: 80vh;
   }
   footer {
     display: flex;
