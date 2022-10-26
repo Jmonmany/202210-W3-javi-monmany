@@ -87,7 +87,13 @@
   cursor: pointer;
 }
 
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .search {
+  max-width: 720px;
   border-radius: 1rem;
   margin-block-start: 2rem;
   display: flex;
@@ -409,6 +415,31 @@
   background-image: url(/Img/Search.png);
   background-size: 1rem;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1000px) {
+  .main-section {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-section .search {
+    max-width: 485px;
+    max-height: 600px;
+  }
+  .main-section .arrow-button {
+    display: none;
+  }
+  .main-section .house-item {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer__item--hidden {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
