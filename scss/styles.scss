@@ -127,6 +127,12 @@ body {
     }
 }
 
+.properties__container{
+   
+    border: 1px solid transparent
+
+}
+
 .house-item {
     padding-block-end: 5rem;
     margin-inline-start: 2rem;
@@ -173,6 +179,13 @@ body {
         height: 1.2rem;
         border-radius: 50%;
     }
+     &__star--bigger {
+        margin-right: 0.3rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+    }
+
 
     &__title {
         font-size: 1.2rem;
