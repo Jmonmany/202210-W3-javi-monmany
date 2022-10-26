@@ -176,6 +176,10 @@
   border: 0;
 }
 
+.properties__container {
+  border: 1px solid transparent;
+}
+
 .house-item {
   padding-block-end: 5rem;
   margin-inline-start: 2rem;
@@ -218,6 +222,12 @@
   margin-right: 0.2rem;
   width: 1.2rem;
   height: 1.2rem;
+  border-radius: 50%;
+}
+.house-item__star--bigger {
+  margin-right: 0.3rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border-radius: 50%;
 }
 .house-item__title {
