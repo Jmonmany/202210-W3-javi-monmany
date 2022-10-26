@@ -127,10 +127,8 @@ body {
     }
 }
 
-.properties__container{
-   
-    border: 1px solid transparent
-
+.properties__container {
+    border: 1px solid transparent;
 }
 
 .house-item {
@@ -179,13 +177,12 @@ body {
         height: 1.2rem;
         border-radius: 50%;
     }
-     &__star--bigger {
+    &__star--bigger {
         margin-right: 0.3rem;
         width: 1.4rem;
         height: 1.4rem;
         border-radius: 50%;
     }
-
 
     &__title {
         font-size: 1.2rem;
@@ -282,27 +279,31 @@ body {
 .info {
     background-image: url(/Img/Contact\ Box.png);
     background-repeat: no-repeat;
-    height: 29rem;
-    background-size: 26rem 29rem;
+    background-size: cover;
+    border-radius: 2rem;
+    height: 28.5rem;
     margin-inline: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &__question {
-        height: 13rem;
-        margin-inline: 2rem;
+        text-align: center;
+        padding-inline: 2.5rem;
         color: variables.$color-white;
         font-weight: 700;
         font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        margin-block-end: 2rem;
     }
     &__button {
         background-color: transparent;
         color: variables.$color-white;
         height: 4rem;
         width: 22rem;
-        border-radius: 40px;
+        border-radius: 2rem;
         border: solid 2px variables.$color-white;
+        font-weight: 600;
     }
 }
 
