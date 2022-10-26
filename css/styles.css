@@ -370,7 +370,7 @@ header {
   font-family: "Poppins", sans-serif;
 }
 .footer__item {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 .footer__item--hidden {
   display: none;
@@ -449,15 +449,73 @@ header {
     display: flex;
     flex-direction: row;
   }
+  .main-section .house-item--hidden {
+    display: block;
+  }
+  .main-section .house-item__image--hidden {
+    display: none;
+  }
+  .main-section .house-item__image-container {
+    min-width: 300px;
+  }
+  .main-section .house-item__text-container {
+    max-width: 400px;
+  }
+  .main-section .house-item__image {
+    margin-block: 0;
+  }
+  .main-section .house-item__title {
+    margin-top: 1rem;
+  }
+  .main-section .house-item__title--small {
+    margin-block-start: 0.5rem;
+  }
+  .main-section .house-item__button {
+    margin-inline-start: -180px;
+  }
   .main-section .properties__container {
     max-width: 80vh;
   }
-  footer {
+  .footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 4rem;
   }
-  footer .footer__item--hidden {
+  .footer__item--hidden {
     display: block;
+  }
+  .footer__item--wider {
+    margin-right: 6rem;
+  }
+  .footer__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-block-end: 2.2rem;
+  }
+  .footer__subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-block-end: 1.6rem;
+  }
+  .footer__text {
+    font-size: 0.875rem;
+  }
+  .footer__item {
+    max-width: 15.5rem;
+  }
+  .footer__list-element {
+    font-size: 0.875rem;
+    margin-block-end: 1.3rem;
+  }
+  .footer__text--purple {
+    margin-block-end: 1.3rem;
+  }
+  .footer__text--tlf {
+    margin-block-start: 1.3rem;
   }
 }
 
