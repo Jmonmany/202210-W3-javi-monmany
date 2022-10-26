@@ -9,7 +9,9 @@
 }
 body {
 }
-
+header {
+    border-bottom: 1px solid rgba(188, 164, 255, 0.4);
+}
 .nav {
     height: 7rem;
     margin: 0;
@@ -19,7 +21,6 @@ body {
     padding-inline-end: 3rem;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(188, 164, 255, 0.4);
     color: variables.$color-blue;
     width: 100vw;
     &__title {
@@ -376,6 +377,23 @@ body {
 }
 
 @media (min-width: 1000px) {
+
+
+    .search-top {
+       
+        &__container {
+            flex-direction: row;
+        }
+        &__input {
+            margin-inline: 0.5rem;
+        }
+        &__button {
+            max-width: 200px;
+            margin-inline: 1rem;
+        }
+
+    }
+    
     .main-section {
         display: flex;
         flex-direction: row;
@@ -416,6 +434,9 @@ body {
             &__button {
                 margin-inline-start: -180px;
             }
+        }
+        .properties__container {
+            max-width: 80vh;
         }
     }
 
@@ -464,4 +485,5 @@ body {
             margin-block-start: 1.3rem;
         }
     }
+
 }
