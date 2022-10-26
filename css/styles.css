@@ -196,6 +196,9 @@
 .house-item p {
   margin: 0;
 }
+.house-item--hidden {
+  display: none;
+}
 .house-item__image-container {
   display: flex;
   overflow: hidden;
@@ -353,31 +356,52 @@
 
 .footer {
   color: #000;
-  padding: 20px;
+  padding: 1.3rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 .footer__item {
   margin-bottom: 1rem;
 }
+.footer__item--hidden {
+  display: none;
+}
 .footer__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 34.375px;
-  line-height: 55px;
+  font-size: 2.15rem;
+  line-height: 3.43rem;
+  margin-block-end: 1rem;
   color: #5f2eea;
+}
+.footer__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-block-end: 1rem;
 }
 .footer__text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
-  color: #14142b;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.75px;
+  color: #6E7191;
 }
 .footer__text--purple {
   color: #bca4ff;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list-element {
+  color: #6E7191;
+  font-size: 0.8rem;
+  list-style: none;
+  margin-block-end: 1rem;
 }
 
 #lupa {
