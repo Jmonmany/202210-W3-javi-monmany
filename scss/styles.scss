@@ -389,6 +389,33 @@ body {
         .house-item {
             display: flex;
             flex-direction: row;
+
+            &--hidden {
+                display: block;
+            }
+            &__image--hidden {
+                display: none;
+            }
+            &__image-container {
+                min-width: 300px;
+            }
+            &__text-container {
+                max-width: 400px;
+            }
+
+            &__image {
+                margin-block: 0;
+            }
+            &__title {
+                margin-top: 1rem;
+            }
+
+            &__title--small {
+                margin-block-start: 0.5rem;
+            }
+            &__button {
+                margin-inline-start: -180px;
+            }
         }
     }
 
@@ -398,9 +425,6 @@ body {
         justify-content: space-around;
         text-align: left;
         margin-top: 4rem;
-
-      
-       
 
         &__item--hidden {
             display: block;
@@ -433,11 +457,10 @@ body {
             font-size: 0.875rem;
             margin-block-end: 1.3rem;
         }
-        &__text--purple{
+        &__text--purple {
             margin-block-end: 1.3rem;
-
         }
-        &__text--tlf{
+        &__text--tlf {
             margin-block-start: 1.3rem;
         }
     }
