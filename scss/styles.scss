@@ -322,7 +322,7 @@ body {
     text-align: center;
     font-family: variables.$font-stack;
     &__item {
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
     }
     &__item--hidden {
         display: none;
@@ -392,11 +392,53 @@ body {
         }
     }
 
-    footer {
+    .footer {
         display: flex;
         flex-direction: row;
-        .footer__item--hidden {
+        justify-content: space-around;
+        text-align: left;
+        margin-top: 4rem;
+
+      
+       
+
+        &__item--hidden {
             display: block;
+        }
+        &__item--wider {
+            margin-right: 6rem;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-block-end: 2.2rem;
+        }
+        &__subtitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-block-end: 1.6rem;
+        }
+
+        &__text {
+            font-size: 0.875rem;
+        }
+        &__item {
+            max-width: 15.5rem;
+        }
+
+        &__list-element {
+            font-size: 0.875rem;
+            margin-block-end: 1.3rem;
+        }
+        &__text--purple{
+            margin-block-end: 1.3rem;
+
+        }
+        &__text--tlf{
+            margin-block-start: 1.3rem;
         }
     }
 }
