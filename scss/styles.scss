@@ -65,11 +65,12 @@ header {
     right: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 60%; /* Full height */
+    min-height: 60%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     display: none;
     color: white;
     background-color: variables.$color-blue-section;
+    
     &__title {
         padding-inline: 3rem;
         color: white;
@@ -79,6 +80,10 @@ header {
         border-bottom: solid 1px variables.$color-grayscale;
         height: 4rem;
     }
+    .menu__title a {
+       
+        background-color: transparent;
+    }
     li {
         display: block;
         padding-block: 0.7rem;
@@ -87,8 +92,13 @@ header {
     li:hover {
         background-color: variables.$color-blue;
     }
+    &__first--hover{
+        padding-block: 0.7rem;
+    }
+   
     div:hover {
         background-color: variables.$color-blue;
+        
     }
     img {
         height: 16px;
@@ -348,6 +358,7 @@ header {
         border-radius: 3rem;
         border: solid 1px variables.$color-blue;
         padding: 0.3rem 1rem;
+        cursor: pointer;
     }
 }
 
@@ -597,7 +608,9 @@ header {
         }
 
         &__button {
-            margin-inline-start: -170px;
+            margin: 0;
+            margin-inline-start: -10.6rem;
+            cursor: pointer;
         }
     }
 
