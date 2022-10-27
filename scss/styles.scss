@@ -49,15 +49,20 @@ header {
 }
 
 .nav__menu:hover > .menu {
-    
     display: block;
 }
 
+.menu__fisrt--list div:hover .menu__second-list {
+    height: 240px;
+}
+.menu__fisrt--list div:hover > .menu__arrow::before {
+    content: url(/Img/Forward-arrow.png);
+}
 
 .menu {
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0 ;
+    right: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 60%; /* Full height */
@@ -74,43 +79,61 @@ header {
         border-bottom: solid 1px variables.$color-grayscale;
         height: 4rem;
     }
-    li{
+    li {
+        display: block;
+        padding-block: 0.7rem;
         height: 3rem;
     }
-     li:hover{
+    li:hover {
         background-color: variables.$color-blue;
     }
-    
+    div:hover {
+        background-color: variables.$color-blue;
+    }
     img {
         height: 16px;
         width: 16px;
         cursor: pointer;
     }
-    
+
+    &__arrow {
+        overflow: hidden;
+    }
+
+    &__arrow::before {
+        content: url(/Img/Forward-right-arrow-blanca.png);
+        position: absolute;
+        left: 3.5rem;
+    }
 
     &__fisrt--list {
         cursor: pointer;
         color: white;
-        display: block;
         padding-block: 2rem;
-        padding-inline-start: 5rem;
         list-style: none;
         a {
+            padding-inline-start: 5rem;
             background-color: transparent;
             text-decoration: none;
             color: white;
         }
     }
+
     &__second-list {
+        overflow: hidden;
         color: white;
-        display: none;
+        list-style: none;
+        background-color: variables.$color-blue;
+        height: 0px;
+        transition: height 0.3s;
+        a {
+            font-size: 0.8rem;
+            background-color: variables.$color-blue;
+            background-color: transparent;
+            text-decoration: none;
+            color: white;
+        }
     }
-    &__first--hover {
-       color:red;
-        z-index: 3;
-    }
-    
-    
 }
 
 .search-top {
@@ -490,6 +513,10 @@ header {
 }
 
 @media (min-width: 1000px) {
+    .menu {
+        max-width: 50%;
+    }
+
     .search-top {
         &__container {
             flex-direction: row;
@@ -560,9 +587,6 @@ header {
 
         &__title {
             margin: 1rem;
-        }
-
-        &__title--small {
         }
 
         &__star-container {
