@@ -45,6 +45,51 @@ header {
             border-radius: 1rem;
             background-color: variables.$color-blue;
         }
+
+    }
+}
+
+.menu {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: variables.$color-blue-section;
+    &__title {
+        padding-inline: 3rem;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px variables.$color-grayscale;
+        height: 4rem;
+    }
+    &__cross {
+        
+        background-image: url(/Img/Menu-Cross.svg);
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+    }
+    &__fisrt--list {
+        cursor: pointer;
+        color: white;
+        display: block;
+        padding-block: 2rem;
+        padding-inline-start: 5rem;
+        list-style: none;
+        a {
+            
+            background-color: transparent;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    &__second-list {
+        color: white;
+        list-style: none;
+        
     }
 }
 
