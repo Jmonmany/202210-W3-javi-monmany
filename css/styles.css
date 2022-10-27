@@ -47,10 +47,18 @@ header {
   display: block;
 }
 
+.menu__fisrt--list div:hover .menu__second-list {
+  height: 240px;
+}
+
+.menu__fisrt--list div:hover > .menu__arrow::before {
+  content: url(/Img/Forward-arrow.png);
+}
+
 .menu {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 60%; /* Full height */
@@ -69,9 +77,14 @@ header {
   height: 4rem;
 }
 .menu li {
+  display: block;
+  padding-block: 0.7rem;
   height: 3rem;
 }
 .menu li:hover {
+  background-color: #5f2eea;
+}
+.menu div:hover {
   background-color: #5f2eea;
 }
 .menu img {
@@ -79,26 +92,40 @@ header {
   width: 16px;
   cursor: pointer;
 }
+.menu__arrow {
+  overflow: hidden;
+}
+.menu__arrow::before {
+  content: url(/Img/Forward-right-arrow-blanca.png);
+  position: absolute;
+  left: 3.5rem;
+}
 .menu__fisrt--list {
   cursor: pointer;
   color: white;
-  display: block;
   padding-block: 2rem;
-  padding-inline-start: 5rem;
   list-style: none;
 }
 .menu__fisrt--list a {
+  padding-inline-start: 5rem;
   background-color: transparent;
   text-decoration: none;
   color: white;
 }
 .menu__second-list {
+  overflow: hidden;
   color: white;
-  display: none;
+  list-style: none;
+  background-color: #5f2eea;
+  height: 0px;
+  transition: height 0.3s;
 }
-.menu__first--hover {
-  color: red;
-  z-index: 3;
+.menu__second-list a {
+  font-size: 0.8rem;
+  background-color: #5f2eea;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
 }
 
 .search-top {
@@ -496,6 +523,9 @@ header {
 }
 
 @media (min-width: 1000px) {
+  .menu {
+    max-width: 50%;
+  }
   .search-top__container {
     flex-direction: row;
   }
