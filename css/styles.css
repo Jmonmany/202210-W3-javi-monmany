@@ -43,13 +43,20 @@ header {
   background-color: #5f2eea;
 }
 
+.nav__menu:hover > .menu {
+  display: block;
+}
+
 .menu {
-  color: white;
-  position: absolute;
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
   top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%; /* Full width */
+  height: 60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: none;
+  color: white;
   background-color: #2a00a2;
 }
 .menu__title {
@@ -61,10 +68,16 @@ header {
   border-bottom: solid 1px #d9dbe9;
   height: 4rem;
 }
-.menu__cross {
-  background-image: url(/Img/Menu-Cross.svg);
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
+.menu li {
+  height: 3rem;
+}
+.menu li:hover {
+  background-color: #5f2eea;
+}
+.menu img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
 }
 .menu__fisrt--list {
   cursor: pointer;
@@ -81,7 +94,11 @@ header {
 }
 .menu__second-list {
   color: white;
-  list-style: none;
+  display: none;
+}
+.menu__first--hover {
+  color: red;
+  z-index: 3;
 }
 
 .search-top {

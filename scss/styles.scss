@@ -45,17 +45,25 @@ header {
             border-radius: 1rem;
             background-color: variables.$color-blue;
         }
-
     }
 }
 
+.nav__menu:hover > .menu {
+    
+    display: block;
+}
+
+
 .menu {
-    color: white;
-    position: absolute;
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0 ;
     top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%; /* Full width */
+    height: 60%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    display: none;
+    color: white;
     background-color: variables.$color-blue-section;
     &__title {
         padding-inline: 3rem;
@@ -66,12 +74,20 @@ header {
         border-bottom: solid 1px variables.$color-grayscale;
         height: 4rem;
     }
-    &__cross {
-        
-        background-image: url(/Img/Menu-Cross.svg);
-        background-repeat: no-repeat;
-        background-size: 24px 24px;
+    li{
+        height: 3rem;
     }
+     li:hover{
+        background-color: variables.$color-blue;
+    }
+    
+    img {
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+    }
+    
+
     &__fisrt--list {
         cursor: pointer;
         color: white;
@@ -80,7 +96,6 @@ header {
         padding-inline-start: 5rem;
         list-style: none;
         a {
-            
             background-color: transparent;
             text-decoration: none;
             color: white;
@@ -88,9 +103,14 @@ header {
     }
     &__second-list {
         color: white;
-        list-style: none;
-        
+        display: none;
     }
+    &__first--hover {
+       color:red;
+        z-index: 3;
+    }
+    
+    
 }
 
 .search-top {
