@@ -7,13 +7,16 @@
     box-sizing: border-box;
     font-family: variables.$font-stack;
 }
+
 body {
     max-width: 1350px;
     margin: 0 auto;
 }
+
 header {
     border-bottom: 1px solid rgba(188, 164, 255, 0.4);
 }
+
 .nav {
     height: 7rem;
     margin: 0;
@@ -28,11 +31,13 @@ header {
     &__title {
         font-size: 2rem;
     }
+
     &__menu {
         margin-inline-end: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         a {
             margin: 0.1rem;
             width: 1.9rem;
@@ -95,11 +100,13 @@ header {
     padding-inline: 2rem;
     border-bottom: solid 1px variables.$color-grayscale;
     padding-block-end: 2rem;
+
     &__container {
         margin-block: 1rem;
         display: flex;
         flex-direction: column;
     }
+
     &__title {
         font-style: normal;
         font-weight: 700;
@@ -116,6 +123,7 @@ header {
         padding: 1.5rem 1rem;
         margin-block: 0.7rem;
     }
+
     &__input--arrow {
         background: url(../Img/Forward-right-arrow.png) no-repeat right;
         background-size: 0.7rem;
@@ -160,22 +168,28 @@ header {
     padding-inline-end: 2rem;
     padding-inline-start: 2rem;
     padding-bottom: 2rem;
+
     &__title {
         font-weight: 600;
         margin-block: 2rem;
     }
+
     &__subtitle {
         color: variables.$color-section-letter;
     }
+
     &__magnifier {
         @include mixins.theme($icon: url(/Img/Search.png));
     }
+
     &__checkin {
         @include mixins.theme;
     }
+
     &__checkout {
         @include mixins.theme;
     }
+
     &__travellers {
         @include mixins.theme($icon: url(/Img/Profile.png));
     }
@@ -185,23 +199,37 @@ header {
     border: 1px solid transparent;
 }
 
+.properties__title h2 {
+    margin: 0;
+}
+.properties__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-block-start: 2.3rem;
+    margin-block-end: 0;
+    margin-inline-start: 3rem;
+}
+
 .house-item {
-    padding-block-end: 5rem;
-    margin-inline-start: 2rem;
-    margin-block-start: 3rem;
-    border-bottom: solid 1px variables.$color-grayscale;
-    &__properties {
-        font-weight: 700;
-    }
     h4,
     h5 {
         margin: 0;
     }
+
     p {
         margin: 0;
     }
+
+    padding-block-end: 5rem;
+    margin-inline-start: 2rem;
+    margin-block-start: 3rem;
+    border-bottom: solid 1px variables.$color-grayscale;
+
     &--hidden {
         display: none;
+    }
+    &--first {
+        margin-block-start: 0;
     }
 
     &__image-container {
@@ -217,10 +245,12 @@ header {
         margin-inline-end: 1rem;
         margin-block: 2rem;
     }
+
     &__text-container {
         display: flex;
         flex-direction: column;
     }
+
     &__star-container {
         display: flex;
         flex-direction: row;
@@ -234,6 +264,7 @@ header {
         height: 1.2rem;
         border-radius: 50%;
     }
+
     &__star--bigger {
         margin-right: 0.3rem;
         width: 1.4rem;
@@ -247,9 +278,11 @@ header {
         color: variables.$color-blue;
         margin: 0.5rem 0;
     }
+
     &__title--small {
         font-size: 1rem;
     }
+
     &__title--img::before {
         content: url(../Img/Location.png);
         margin-right: 0.5rem;
@@ -260,13 +293,14 @@ header {
         font-weight: 400;
         color: variables.$color-gray-light;
     }
+
     &__button {
         font-family: variables.$font-stack;
         background-color: variables.$color-white;
         color: variables.$color-blue;
         font-size: 0.7rem;
         font-weight: 600;
-        margin: 0.5rem 0;
+        margin: 0.8rem 0;
         border: none;
         border-radius: 3rem;
         border: solid 1px variables.$color-blue;
@@ -288,6 +322,7 @@ header {
 .thumb-warning {
     margin-inline: 2rem;
     margin-block: 1rem;
+
     &__thumb {
         background-color: variables.$color-green;
         height: 8rem;
@@ -298,6 +333,7 @@ header {
         border: solid 2px;
         border-radius: 15px;
         border-color: variables.$color-green-letter;
+
         p {
             color: variables.$color-green-letter;
             padding-inline-end: 2rem;
@@ -307,9 +343,10 @@ header {
             background-size: 1.5rem;
             background-position: 5% 10%;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
         }
     }
+
     &__warning {
         background-color: variables.$color-pink-vanish;
         height: 10rem;
@@ -320,6 +357,7 @@ header {
         border: solid 2px;
         border-radius: 15px;
         border-color: variables.$color-pink-letter;
+
         p {
             color: variables.$color-pink-letter;
             padding-inline-start: 3.5rem;
@@ -328,7 +366,7 @@ header {
             background-size: 1.5rem;
             background-position: 5% 10%;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
         }
     }
 }
@@ -344,6 +382,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &__question {
         text-align: center;
         padding-inline: 2.5rem;
@@ -353,11 +392,12 @@ header {
         letter-spacing: 0.1rem;
         margin-block-end: 2rem;
     }
+
     &__button {
         background-color: transparent;
         color: variables.$color-white;
         height: 4rem;
-        width: 22rem;
+        width: 15rem;
         border-radius: 2rem;
         border: solid 2px variables.$color-white;
         font-weight: 600;
@@ -369,9 +409,11 @@ header {
     padding: 1.3rem;
     text-align: center;
     font-family: variables.$font-stack;
+
     &__item {
         margin-bottom: 4rem;
     }
+
     &__item--hidden {
         display: none;
     }
@@ -385,6 +427,7 @@ header {
         margin-block-end: 1rem;
         color: variables.$color-blue;
     }
+
     &__subtitle {
         font-family: variables.$font-stack;
         font-weight: 600;
@@ -402,12 +445,15 @@ header {
         letter-spacing: 0.75px;
         color: variables.$color-gray-lighter;
     }
+
     &__text--purple {
         color: variables.$color-purple;
     }
+
     &__list {
         list-style: none;
     }
+
     &__list-element {
         color: variables.$color-gray-lighter;
         font-size: 0.8rem;
@@ -424,67 +470,109 @@ header {
 }
 
 @media (min-width: 1000px) {
-
-
     .search-top {
-       
         &__container {
             flex-direction: row;
         }
+
         &__input {
             margin-inline: 0.5rem;
         }
+        &__input--first-item {
+            flex-grow: 1.3;
+        }
+
         &__button {
             max-width: 200px;
             margin-inline: 1rem;
         }
-
     }
-    
+
     .main-section {
         display: flex;
         flex-direction: row;
+        margin-block-start: 1rem;
+
         .search {
             max-width: 485px;
             max-height: 600px;
         }
+
         .arrow-button {
             display: none;
         }
-        .house-item {
-            display: flex;
-            flex-direction: row;
+    }
 
-            &--hidden {
-                display: block;
-            }
-            &__image--hidden {
-                display: none;
-            }
-            &__image-container {
-                min-width: 300px;
-            }
-            &__text-container {
-                max-width: 400px;
-            }
+    .properties__container {
+        max-width: auto;
+        margin-block-start: 1rem;
+    }
 
-            &__image {
-                margin-block: 0;
-            }
-            &__title {
-                margin-top: 1rem;
-            }
+    .properties__title {
+        margin-block-start: 0;
+        padding-block-end: 1.8rem;
+        padding-inline-start: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-inline-start: 0;
+    }
 
-            &__title--small {
-                margin-block-start: 0.5rem;
-            }
-            &__button {
-                margin-inline-start: -180px;
-            }
+    .house-item {
+        display: flex;
+        flex-direction: row;
+
+        &__image--hidden {
+            display: none;
         }
-        .properties__container {
-            max-width: 80vh;
+
+        &__image-container {
+            min-width: 300px;
         }
+
+        &__text-container {
+            max-width: 500px;
+            min-width: 400px;
+        }
+
+        &__image {
+            margin-block: 0;
+        }
+
+        &__title {
+            margin: 1rem;
+        }
+
+        &__title--small {
+        }
+
+        &__star-container {
+            margin-block-end: 1.2rem;
+        }
+
+        &__button-container {
+        }
+
+        &__button {
+            margin-inline-start: -170px;
+        }
+    }
+
+    .thumb-warning__thumb,
+    .thumb-warning__warning {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9;
+        height: 6rem;
+    }
+    .thumb-warning__thumb p,
+    .thumb-warning__warning p {
+        padding-inline-end: 38rem;
+        line-height: 3;
+        padding-inline-start: 4.5rem;
+        background-position: 2%;
+    }
+    .thumb-warning__warning p {
+        padding-inline-end: 23rem;
     }
 
     .footer {
@@ -497,6 +585,7 @@ header {
         &__item--hidden {
             display: block;
         }
+
         &__item--wider {
             margin-right: 6rem;
         }
@@ -507,6 +596,7 @@ header {
             line-height: 1;
             margin-block-end: 2.2rem;
         }
+
         &__subtitle {
             font-size: 1.25rem;
             font-weight: 600;
@@ -517,6 +607,7 @@ header {
         &__text {
             font-size: 0.875rem;
         }
+
         &__item {
             max-width: 15.5rem;
         }
@@ -525,12 +616,13 @@ header {
             font-size: 0.875rem;
             margin-block-end: 1.3rem;
         }
+
         &__text--purple {
             margin-block-end: 1.3rem;
         }
+
         &__text--tlf {
             margin-block-start: 1.3rem;
         }
     }
-
 }
