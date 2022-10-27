@@ -43,6 +43,47 @@ header {
   background-color: #5f2eea;
 }
 
+.menu {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a00a2;
+}
+.menu__title {
+  padding-inline: 3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #d9dbe9;
+  height: 4rem;
+}
+.menu__cross {
+  background-image: url(/Img/Menu-Cross.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.menu__fisrt--list {
+  cursor: pointer;
+  color: white;
+  display: block;
+  padding-block: 2rem;
+  padding-inline-start: 5rem;
+  list-style: none;
+}
+.menu__fisrt--list a {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+.menu__second-list {
+  color: white;
+  list-style: none;
+}
+
 .search-top {
   display: flex;
   flex-direction: column;
