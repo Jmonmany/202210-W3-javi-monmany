@@ -8,6 +8,8 @@
     font-family: variables.$font-stack;
 }
 body {
+    max-width: 1350px;
+    margin: 0 auto;
 }
 header {
     border-bottom: 1px solid rgba(188, 164, 255, 0.4);
@@ -22,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: variables.$color-blue;
-    width: 100vw;
+    width: auto;
     &__title {
         font-size: 2rem;
     }
