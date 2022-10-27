@@ -9,6 +9,8 @@
 }
 
 body {
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
 header {
@@ -25,8 +27,12 @@ header {
     justify-content: space-between;
     align-items: center;
     color: variables.$color-blue;
+<<<<<<< HEAD
     width: 100vw;
 
+=======
+    width: auto;
+>>>>>>> main
     &__title {
         font-size: 2rem;
     }
